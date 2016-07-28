@@ -1,5 +1,5 @@
-$color: #AED591;
-$beer: #768413;
+$color: #80CFA9;
+$color2: #D4C5E2;
 
 @mixin margin-padding($margin:0, $padding:0){
   margin: $margin;
@@ -8,14 +8,25 @@ $beer: #768413;
 
 body{
   background-color: $color;
+  font: 100% Helvetica, sans-serif;
 }
 
 p{
   color:darken($color, 25%)
 }
 
-#party-stuff {
 
+h1{
   @include margin-padding(50px, 10px)
-  background-color: $beer;
+  background-color: $color2;
+}
+
+nav{
+  li{
+    display: inline-block; 
+  }
+  a{
+    background-color: $color2;
+  }
+
 }
