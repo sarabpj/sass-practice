@@ -1,0 +1,21 @@
+$color: #AED591;
+$beer: #768413;
+
+@mixin margin-padding($margin:0, $padding:0){
+  margin: $margin;
+  padding: $padding;
+}
+
+body{
+  background-color: $color;
+}
+
+p{
+  color:darken($color, 25%)
+}
+
+#party-stuff {
+
+  @include margin-padding(50px, 10px)
+  background-color: $beer;
+}
